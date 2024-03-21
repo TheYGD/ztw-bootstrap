@@ -1,0 +1,18 @@
+
+nav {
+
+}
+
+.background-image {
+    height: 600px;
+    background-image: url('../img/peakpx (1).jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 0; /* Dostosuj odstępy */
+    color: #fff; /* Kolor tekstu */
+}
+
+.nav-text-container {
+    margin-top: 140px;
+}

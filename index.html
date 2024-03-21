@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykładowa Strona</title>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+                data-mdb-collapse-init
+                class="navbar-toggler"
+                type="button"
+                data-mdb-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="background-image mdl-color--grey-800">
+    <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+    <div class="container-fluid text-center position-absolute w-100 nav-text-container">
+        <h2>Podróże małe i duże</h2>
+        <p>Poznaj miejsca, o których istnieniu nawet nie śniłeś!</p>
+    </div>
+</section>
+
+<section id="dogs-in-shelter" class="text-center d-flex align-center justify-content-center p-5">
+    <div class="container row">
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="view overlay z-depth-1-half">
+                <img src="img/peakpx.jpg" class="img-fluid" alt="">
+                <a href="#!">
+                    <div class="mask rgba-blue-light"></div>
+                </a>
+            </div>
+            <h4 class="my-4 font-weight-bold">Podróż 1</h4>
+            <p class="grey-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+                am, aperiam minima assumenda deleniti hic.
+            </p>
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center">
+            <div class="view overlay z-depth-1-half">
+                <img src="img/peakpx (3).jpg" class="img-fluid" alt="">
+                <a href="#!">
+                    <div class="mask"></div>
+                </a>
+            </div>
+            <h4 class="my-4 font-weight-bold">Podróż 1</h4>
+            <p class="grey-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+                am, aperiam minima assumenda deleniti hic.
+            </p>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="view overlay z-depth-1-half">
+                <img src="img/peakpx (5).jpg" class="img-fluid" alt="">
+                <a href="#!">
+                    <div class="mask"></div>
+                </a>
+            </div>
+            <h4 class="my-4 font-weight-bold">Podróż 1</h4>
+            <p class="grey-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+                am, aperiam minima assumenda deleniti hic.
+            </p>
+        </div>
+        <!--Grid column-->
+    </div>
+</section>
+
+<!-- Sekcja z formularzem kontaktowym -->
+<section id="contact-form" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Skontaktuj się z nami</h2>
+        <!-- Formularz kontaktowy -->
+        <form>
+            <div class="form-group">
+                <label for="name">Imię</label>
+                <input type="text" class="form-control" id="name" placeholder="Podaj swoje imię">
+            </div>
+            <div class="form-group">
+                <label for="email">Adres e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Podaj swój adres e-mail">
+            </div>
+            <div class="form-group">
+                <label for="message">Wiadomość</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Napisz swoją wiadomość"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+    </div>
+</section>
+
+<!-- Sekcja z Google Maps -->
+<section id="google-maps" class="py-5">
+    <div class="container">
+        <!-- Tutaj dodaj mapę Google -->
+    </div>
+</section>
+
+<!-- Sekcja z tekstem i zdjęciem w stosunku 1 do 3 -->
+<section id="text-image" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="path/to/image.jpg" alt="Zdjęcie" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <p>Tutaj umieść tekst w stosunku 1 do 3 do zdjęcia.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sekcja z cytatem -->
+<section id="quote" class="bg-light py-5">
+    <div class="container">
+        <blockquote class="blockquote">
+            <p class="mb-0">To jest przykładowy cytat.</p>
+            <footer class="blockquote-footer">Autor cytatu</footer>
+        </blockquote>
+    </div>
+</section>
+
+<!-- Sekcja z kontrolką Carousel -->
+<section id="carousel" class="py-5">
+    <div class="container">
+        <!-- Tutaj dodaj Carousel z Cards -->
+    </div>
+</section>
+
+<!-- Sekcja FAQ z wykorzystaniem kontrolki Accordion -->
+<section id="faq" class="bg-light py-5">
+    <div class="container">
+        <!-- Tutaj dodaj Accordion z często zadawanymi pytaniami -->
+    </div>
+</section>
+
+<!-- Sekcja z wykresem -->
+<section id="chart" class="py-5">
+    <div class="container">
+        <!-- Tutaj dodaj wykres -->
+    </div>
+</section>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Material Design Lite JavaScript -->
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>
