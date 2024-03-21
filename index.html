@@ -47,6 +47,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">Features</a>
                 <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#contact-form">Kontakt</a>
             </div>
         </div>
     </div>
@@ -75,7 +76,7 @@
                 am, aperiam minima assumenda deleniti hic.
             </p>
         </div>
-        <!--Grid column-->
+
         <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center">
             <div class="view overlay z-depth-1-half">
                 <img src="img/peakpx (3).jpg" class="img-fluid" alt="">
@@ -89,8 +90,7 @@
                 am, aperiam minima assumenda deleniti hic.
             </p>
         </div>
-        <!--Grid column-->
-        <!--Grid column-->
+
         <div class="col-lg-4 col-md-12 mb-4">
             <div class="view overlay z-depth-1-half">
                 <img src="img/peakpx (5).jpg" class="img-fluid" alt="">
@@ -104,61 +104,6 @@
                 am, aperiam minima assumenda deleniti hic.
             </p>
         </div>
-        <!--Grid column-->
-    </div>
-</section>
-
-<!-- Sekcja z formularzem kontaktowym -->
-<section id="contact-form" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Skontaktuj się z nami</h2>
-        <!-- Formularz kontaktowy -->
-        <form>
-            <div class="form-group">
-                <label for="name">Imię</label>
-                <input type="text" class="form-control" id="name" placeholder="Podaj swoje imię">
-            </div>
-            <div class="form-group">
-                <label for="email">Adres e-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Podaj swój adres e-mail">
-            </div>
-            <div class="form-group">
-                <label for="message">Wiadomość</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Napisz swoją wiadomość"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Wyślij</button>
-        </form>
-    </div>
-</section>
-
-<!-- Sekcja z Google Maps -->
-<section id="google-maps" class="py-5">
-    <div class="container">
-        <!-- Tutaj dodaj mapę Google -->
-    </div>
-</section>
-
-<!-- Sekcja z tekstem i zdjęciem w stosunku 1 do 3 -->
-<section id="text-image" class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="path/to/image.jpg" alt="Zdjęcie" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <p>Tutaj umieść tekst w stosunku 1 do 3 do zdjęcia.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sekcja z cytatem -->
-<section id="quote" class="bg-light py-5">
-    <div class="container">
-        <blockquote class="blockquote">
-            <p class="mb-0">To jest przykładowy cytat.</p>
-            <footer class="blockquote-footer">Autor cytatu</footer>
-        </blockquote>
     </div>
 </section>
 
@@ -176,11 +121,66 @@
     </div>
 </section>
 
-<!-- Sekcja z wykresem -->
-<section id="chart" class="py-5">
-    <div class="container">
-        <!-- Tutaj dodaj wykres -->
+<section class="quote-section">
+    <h3 class="text-center">Cytat dnia</h3>
+    <div class="container py-4 d-flex flex-column justify-content-center">
+        <blockquote class="blockquote my-blockquote bq-primary align-self-center">
+            <p>Podróżowanie – to jedyna rzecz na którą wydajesz pieniądze, a stajesz się bogatszy.</p>
+        </blockquote>
+        <footer class="blockquote-footer my-blockquote-footer">Gall Anonim</footer>
     </div>
+</section>
+
+<section class="bali-section my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Bali</h3>
+                <p>Poza swoim rajskim urokiem, zaskakuje również majestatycznym pasmem górskim z najwyższym szczyt Agung</p>
+            </div>
+            <div class="col-md-9">
+                <img src="./img/bali.jpg" alt="Obraz" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="map-section" class="py-5 my-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nasza siedziba</h2>
+        <div id="map-container-google-1" class="map-container" style="height: 700px">
+            <iframe src="https://maps.google.com/maps?q=51.1089432,17.0593417&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    style="border:0; height: 600px" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section id="contact-form" class="bg-light py-5 my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Skontaktuj się z nami</h2>
+        <form class="d-flex flex-column">
+            <div class="form-group">
+                <label for="name">Imię</label>
+                <input type="text" class="form-control" id="name" placeholder="Podaj swoje imię">
+            </div>
+            <div class="form-group">
+                <label for="email">Adres e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Podaj swój adres e-mail">
+            </div>
+            <div class="form-group">
+                <label for="message">Wiadomość</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Napisz swoją wiadomość"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success align-self-center mt-2">Wyślij</button>
+        </form>
+    </div>
+</section>
+
+<section style="height: 300px">
+
+
+
+
 </section>
 
 <!-- Bootstrap JavaScript -->

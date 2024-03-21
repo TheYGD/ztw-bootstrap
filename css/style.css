@@ -16,3 +16,20 @@ nav {
 .nav-text-container {
     margin-top: 140px;
 }
+
+.map-container {
+    height: 300px;
+}
+
+.bali-section {
+    background: #e5e3dd;
+}
+
+.bali-section p {
+    font-size: 16px;
+}
+
+.my-blockquote, .my-blockquote-footer {
+    width: 300px;
+    align-self: center;
+}
