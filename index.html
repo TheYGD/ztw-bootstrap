@@ -42,7 +42,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
                     <a class="nav-link" href="#contact-form">Kontakt</a>
                 </div>
             </div>
@@ -147,7 +147,56 @@
             </div>
         </div>
     </section>
+    <section id="faq" class="bg-light py-5 mt-5 mb5">
+        <div class="container">
+            <h2 class="text-center mb-5">FAQ</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faqHeading1">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Czy potrzebuję wizy, aby podróżować do Peru?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Tak, większość osób podróżujących do Peru będzie potrzebować wizy turystycznej. Jednak obywatele wielu krajów mogą wjeżdżać do Peru bez wizy na pobyt do 90 dni. Przed podróżą zaleca się skonsultowanie się z najbliższym konsulatem peruńskim w celu uzyskania najbardziej aktualnych informacji dotyczących wizowej.
 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeading2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Jakie szczepienia są zalecane przed podróżą do Ameryki Południowej?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Przed podróżą zaleca się zaszczepienie się przeciwko chorobom takim jak żółta febra, tyfus, dur brzuszny oraz szczepienie przeciwko wirusowi zapalenia wątroby typu A i B. Ponadto, zaleca się również upewnienie się, że standardowe szczepienia takie jak przeciwko błonicy, tężcowi i polio są aktualne. Zawsze warto skonsultować się z lekarzem przed wyjazdem, aby uzyskać spersonalizowane zalecenia dotyczące zdrowia.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeading2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Jakie są środki ostrożności dotyczące bezpieczeństwa podczas podróży do Peru?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Podczas podróży do Peru zaleca się zachowanie ostrożności i przestrzeganie podstawowych zasad bezpieczeństwa. Należy unikać noszenia wartościowych przedmiotów na widoku, zwłaszcza w zatłoczonych miejscach. W miastach takich jak Lima i Cuzco należy być ostrożnym w nocy i unikać odległych obszarów w godzinach wieczornych. Zaleca się również podróżowanie z licencjonowanym przewodnikiem w przypadku wycieczek po mniej uczęszczanych obszarach lub trekkingu w górach.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- MDB -->
     <script type="text/javascript"
@@ -156,5 +205,10 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/chart.js"></script>
+    <!-- Accordion -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
