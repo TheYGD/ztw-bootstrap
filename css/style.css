@@ -1,7 +1,4 @@
 
-nav {
-
-}
 
 .background-image {
     height: 600px;
@@ -9,8 +6,8 @@ nav {
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 100px 0; /* Dostosuj odstępy */
-    color: #fff; /* Kolor tekstu */
+    padding: 100px 0;
+    color: #fff;
 }
 
 .nav-text-container {
@@ -30,6 +27,30 @@ nav {
 }
 
 .my-blockquote, .my-blockquote-footer {
-    width: 300px;
+    width: 400px;
     align-self: center;
+}
+
+.carousel img {
+    height: 700px;
+    object-fit: fill;
+    /*object-position: center;*/
+}
+
+.my-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f6f6f6;
+}
+
+.quote-section {
+    margin: 80px 0 140px 0;
 }

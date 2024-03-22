@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przykładowa Strona</title>
+
     <!-- Font Awesome -->
     <link
-            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
-    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
     <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />>
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+            rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Lite CSS -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
@@ -53,57 +51,26 @@
     </div>
 </nav>
 
-<section class="background-image mdl-color--grey-800">
-    <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-    <div class="container-fluid text-center position-absolute w-100 nav-text-container">
-        <h2>Podróże małe i duże</h2>
-        <p>Poznaj miejsca, o których istnieniu nawet nie śniłeś!</p>
+
+<section>
+    <div class="container-fluid p-0">
+        <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/peakpx%20(1)%20low.jpg" class="d-block w-100" alt="Wild Landscape"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/peakpx%20(4)%20low.jpg" class="d-block w-100" alt="Camera"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/peakpx%20(3)%20low.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-
-<section id="dogs-in-shelter" class="text-center d-flex align-center justify-content-center p-5">
-    <div class="container row">
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="view overlay z-depth-1-half">
-                <img src="img/peakpx.jpg" class="img-fluid" alt="">
-                <a href="#!">
-                    <div class="mask rgba-blue-light"></div>
-                </a>
-            </div>
-            <h4 class="my-4 font-weight-bold">Podróż 1</h4>
-            <p class="grey-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
-                am, aperiam minima assumenda deleniti hic.
-            </p>
-        </div>
-
-        <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center">
-            <div class="view overlay z-depth-1-half">
-                <img src="img/peakpx (3).jpg" class="img-fluid" alt="">
-                <a href="#!">
-                    <div class="mask"></div>
-                </a>
-            </div>
-            <h4 class="my-4 font-weight-bold">Podróż 1</h4>
-            <p class="grey-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
-                am, aperiam minima assumenda deleniti hic.
-            </p>
-        </div>
-
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="view overlay z-depth-1-half">
-                <img src="img/peakpx (5).jpg" class="img-fluid" alt="">
-                <a href="#!">
-                    <div class="mask"></div>
-                </a>
-            </div>
-            <h4 class="my-4 font-weight-bold">Podróż 1</h4>
-            <p class="grey-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
-                am, aperiam minima assumenda deleniti hic.
-            </p>
-        </div>
+    <div class="my-mask">
+        <h1>Podróże małe i duże</h1>
+        <h5>Poznaj miejsca, o których istnieniu nawet nie śniłeś!</h5>
     </div>
 </section>
 
@@ -114,27 +81,20 @@
     </div>
 </section>
 
-<!-- Sekcja FAQ z wykorzystaniem kontrolki Accordion -->
-<section id="faq" class="bg-light py-5">
-    <div class="container">
-        <!-- Tutaj dodaj Accordion z często zadawanymi pytaniami -->
-    </div>
-</section>
-
 <section class="quote-section">
     <h3 class="text-center">Cytat dnia</h3>
     <div class="container py-4 d-flex flex-column justify-content-center">
-        <blockquote class="blockquote my-blockquote bq-primary align-self-center">
+        <blockquote class="blockquote my-blockquote bq-primary align-self-center mb-4">
             <p>Podróżowanie – to jedyna rzecz na którą wydajesz pieniądze, a stajesz się bogatszy.</p>
         </blockquote>
         <footer class="blockquote-footer my-blockquote-footer">Gall Anonim</footer>
     </div>
 </section>
 
-<section class="bali-section my-5">
+<section class="bali-section mt-5 mb5">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 mt-5">
                 <h3>Bali</h3>
                 <p>Poza swoim rajskim urokiem, zaskakuje również majestatycznym pasmem górskim z najwyższym szczyt Agung</p>
             </div>
@@ -145,17 +105,17 @@
     </div>
 </section>
 
-<section id="map-section" class="py-5 my-5">
+<section id="map-section" class="py-5 mt-5 mb5">
     <div class="container">
         <h2 class="text-center mb-5">Nasza siedziba</h2>
         <div id="map-container-google-1" class="map-container" style="height: 700px">
             <iframe src="https://maps.google.com/maps?q=51.1089432,17.0593417&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                    style="border:0; height: 600px" allowfullscreen></iframe>
+                    style="border:0; height: 600px; width: 100%" allowfullscreen></iframe>
         </div>
     </div>
 </section>
 
-<section id="contact-form" class="bg-light py-5 my-5">
+<section id="contact-form" class="bg-light py-5 mt-5 mb5">
     <div class="container">
         <h2 class="text-center mb-4">Skontaktuj się z nami</h2>
         <form class="d-flex flex-column">
@@ -176,18 +136,14 @@
     </div>
 </section>
 
-<section style="height: 300px">
-
 
 
 
 </section>
-
-<!-- Bootstrap JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Material Design Lite JavaScript -->
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+></script>
 </body>
 </html>
